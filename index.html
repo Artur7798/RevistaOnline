@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Revista Online</title>
+    <style>
+        /* Estilo para a revista */
+        .revista {
+            width: 600px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        /* Estilo para as páginas */
+        .pagina {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="revista">
+    <div class="pagina" id="pagina1">
+        <h1>Página 1</h1>
+        <p>Este é o conteúdo da página 1.</p>
+        <button onclick="modificarPagina('pagina1')">Modificar página</button>
+    </div>
+    <div class="pagina" id="pagina2">
+        <h1>Página 2</h1>
+        <p>Este é o conteúdo da página 2.</p>
+        <button onclick="modificarPagina('pagina2')">Modificar página</button>
+    </div>
+    <button onclick="paginaAnterior()">&#8592;</button>
+    <button onclick="proximaPagina()">&#8594;</button>
+</div>
+<script>
+    var paginaAtual = 1;
+    var numeroDePaginas = 2;
+
+    function proximaPagina() {
+        if (paginaAtual < numeroDePaginas) {
+            paginaAtual++;
+            atualizarPaginaAtual();
+        }
+    }
+
+    function paginaAnterior() {
+        if (paginaAtual > 1) {
+            paginaAtual--;
+            atualizarPaginaAtual();
+        }
+    }
+
+    function atualizarPaginaAtual() {
+        var paginas = document.getElementsByClassName("pagina");
+        for (var i = 0; i < paginas.length; i++) {
+            paginas[i].style.display = "none";
+        }
+        paginas[paginaAtual - 1].style.display = "block";
+    }
+
+    function modificarPagina(id) {
+        var pagina = document.getElementById(id);
+        var novoConteudo = prompt("Digite o novo conteúdo:");
+        pagina.innerHTML = "<h1>" + id + "</h1><p>" + novoConteudo + "</p><button onclick='modificarPagina(\"" + id + "\")'>Modificar página</button>";
+    }
+
+    atualizarPaginaAtual();
+</script>
+</body>
+</html>
