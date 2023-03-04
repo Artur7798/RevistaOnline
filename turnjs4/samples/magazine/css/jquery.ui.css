@@ -121,7 +121,7 @@
 
 /* Interaction states
 ----------------------------------*/
-.turnjs-slider .ui-slider-handle{
+.turnjs-xslider .ui-slider-handle{
 	border:1px solid white;
 	background-color:black;
 	opacity:0.2;

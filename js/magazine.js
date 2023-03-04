@@ -235,8 +235,8 @@ function resizeViewport() {
 
 	if ($('.magazine').turn('zoom')==1) {
 		var bound = calculateBound({
-			width: options.width,
-			height: options.height,
+			width: options.width/2,
+			height: options.height/2,
 			boundWidth: Math.min(options.width, width),
 			boundHeight: Math.min(options.height, height)
 		});
