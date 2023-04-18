@@ -41,5 +41,16 @@
 		{
 			"page": 12
 		}
-}
+},
+	{
+		"x":22,
+		"y":400,
+		"width":130,
+		"height":12,
+		"class":"link",
+		"data":
+		{
+			"url": "http://youtube.com"
+		}
+	}
 ]
