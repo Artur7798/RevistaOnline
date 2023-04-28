@@ -4,16 +4,14 @@ body{
 	margin:0;
 	padding:0;
 }
-
 .magazine-viewport .container{
 	position:absolute;
-	top:50%;
+	top:40%;
 	left:50%;
 	width:922px;
 	height:600px;
 	margin:auto;
 }
-
 .magazine-viewport .magazine{
 	width:922px;
 	height:600px;
