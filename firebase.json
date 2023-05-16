@@ -1,10 +1,13 @@
 {
   "hosting": {
-    "public": "RevistaOnline/public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "public": "caminho/para/seus/arquivos",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
+
+
