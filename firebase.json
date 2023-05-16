@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "caminho/para/seus/arquivos",
+    "public": "RevistaOnline/public",
     "rewrites": [
       {
         "source": "**",
