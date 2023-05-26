@@ -5,13 +5,17 @@
 	"height":143,
 	"class":"zoom"
 },
-{
-	"x":287,
-	"y":155,
-	"width":175,
-	"height":134,
-	"class":"zoom"
-},
+	{
+		"x":10,
+		"y":500,
+		"width":128,
+		"height":15,
+		"class":"to-page",
+		"data":
+		{
+			"page": 8
+		}
+	},
 {
 	"x":0,
 	"y":264,
