@@ -1,0 +1,23 @@
+[{
+  "x":340,
+  "y":550,
+  "width":117,
+  "height":14,
+  "class":"link",
+  "data" :
+  {
+    "url": "https://www.instagram.com/ybeane/"
+  }
+},
+  {
+    "x":20,
+    "y":550,
+    "width":117,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/gabriellypazart/"
+    }
+  }
+]

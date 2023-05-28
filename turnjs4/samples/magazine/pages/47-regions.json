@@ -1,0 +1,45 @@
+[{
+    "x":330,
+    "y":530,
+    "width":40,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.amazon.com.br/Poliamar-versos-navega%C3%A7%C3%A3o-Mandi-Moreira-ebook/dp/B09NWCVFVZ/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=YETNWFAHLRYR&keywords=poliamar&qid=1685300759&sprefix=pol%2Caps%2C556&sr=8-1"
+    }
+  },
+  {
+    "x":280,
+    "y":380,
+    "width":110,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://mandimoreira.mypixieset.com/livros/"
+    }
+  },
+  {
+    "x":280,
+    "y":518,
+    "width":100,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.mercadoblackmoney.com.br/poliamar/produto/poliamar-versos-de-navegacao"
+    }
+  },
+  {
+    "x":350,
+    "y":550,
+    "width":100,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/lucianaandradito/"
+    }
+  }
+]
