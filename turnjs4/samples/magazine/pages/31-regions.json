@@ -30,16 +30,5 @@
     {
       "url": "https://open.spotify.com/album/4U1gnAsa5rmW9MezO5DPfr"
     }
-  },
-  {
-    "x":350,
-    "y":550,
-    "width":100,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/ju.lopse/"
-    }
   }
 ]
