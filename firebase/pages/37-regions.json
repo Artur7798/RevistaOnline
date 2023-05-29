@@ -1,0 +1,13 @@
+[
+  {
+    "x":345,
+    "y":550,
+    "width":100,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/luapinkhasovna/"
+    }
+  }
+]
