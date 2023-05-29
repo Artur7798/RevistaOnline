@@ -1,22 +1,13 @@
-[{
-	"x":270,
-	"y":0,
-	"width":161,
-	"height":148,
-	"class":"zoom"
-},
-{
-	"x":51,
-	"y":77,
-	"width":174,
-	"height":141,
-	"class":"zoom"
-},
-{
-	"x":33,
-	"y":448,
-	"width":398,
-	"height":113,
-	"class":"zoom"
-}
+[
+	{
+		"x": 280,
+		"y": 458,
+		"width": 70,
+		"height": 40,
+		"class": "link",
+		"background": "transparent",
+		"data": {
+			"url": "https://docs.google.com/forms/d/e/1FAIpQLSfZ-5KUGl0W1-3wvorAOqXzqmF4ZwAkyuppoqynDcH-53G2zA/viewform"
+		}
+	}
 ]
