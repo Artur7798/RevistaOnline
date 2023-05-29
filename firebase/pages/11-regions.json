@@ -1,15 +1,12 @@
 [{
-	"x":181,
-	"y":386,
-	"width":102,
-	"height":214,
-	"class":"zoom"
-},
-{
-	"x":289,
-	"y":253,
-	"width":173,
-	"height":312,
-	"class":"zoom"
+	"x":360,
+	"y":550,
+	"width":85,
+	"height":20,
+	"class":"link",
+	"data" :
+	{
+		"url": "https://www.instagram.com/michetti_r/"
+	}
 }
 ]
