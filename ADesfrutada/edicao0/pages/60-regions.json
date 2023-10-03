@@ -1,0 +1,67 @@
+[{
+    "x":185,
+    "y":150,
+    "width":85,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/adesfrutada/"
+    }
+  },
+  {
+    "x":185,
+    "y":205,
+    "width":85,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/maralheios/"
+    }
+  },
+  {
+    "x":260,
+    "y":500,
+    "width":60,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/mandhi.e/"
+    }
+  },
+  {
+    "x":265,
+    "y":509,
+    "width":40,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/ju.lopse/"
+    }
+  },
+  {
+    "x":240,
+    "y":525,
+    "width":80,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/andersonhuber/"
+    }
+  },
+  {
+    "x":210,
+    "y":540,
+    "width":80,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/arturgrochocki/"
+    }
+  }
+]
