@@ -1,45 +1,13 @@
-[{
-    "x":270,
-    "y":175,
-    "width":140,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/nativaprojeto/"
-    }
-  },
+[
   {
-    "x":240,
-    "y":305,
-    "width":85,
+    "x":365,
+    "y":550,
+    "width":70,
     "height":14,
-    "class":"link",
+    "class":"to-page",
     "data" :
     {
-      "url": "https://www.instagram.com/nataliachagasn/"
-    }
-  },
-  {
-    "x":140,
-    "y":420,
-    "width":80,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/coral.ilustra/"
-    }
-  },
-  {
-    "x":140,
-    "y":510,
-    "width":80,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/fefi.sampaio/"
+      "page": 80
     }
   }
 ]

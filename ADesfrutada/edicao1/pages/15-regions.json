@@ -1,23 +1,12 @@
-[/*{
-  "x":340,
-  "y":555,
-  "width":117,
-  "height":14,
-  "class":"link",
-  "data" :
+[{
+  "x":325,
+  "y":550,
+  "width":65,
+  "height":10,
+  "class":"to-page",
+  "data":
   {
-    "url": "https://www.instagram.com/cristininha72/"
+    "page": 74
   }
-},
-  {
-    "x":20,
-    "y":555,
-    "width":117,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/mandhi.e/"
-    }
-  }*/
+}
 ]

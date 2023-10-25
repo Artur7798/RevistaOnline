@@ -1,13 +1,24 @@
 [
   {
     "x":335,
-    "y":565,
-    "width":100,
+    "y":550,
+    "width":90,
     "height":14,
-    "class":"link",
+    "class":"to-page",
     "data" :
     {
-      "url": "https://www.instagram.com/mandhi.e/"
+      "page": 80
     }
-  }
+  },
+    {
+      "x":35,
+      "y":392,
+      "width":180,
+      "height":14,
+      "class":"link",
+      "data" :
+      {
+        "url": "https://www.instagram.com/coletivoescreviventes/"
+      }
+    }
 ]

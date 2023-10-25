@@ -1,13 +1,12 @@
-[/*
-  {
-    "x":370,
+[{
+    "x":335,
     "y":550,
-    "width":80,
+    "width":90,
     "height":14,
-    "class":"link",
+    "class":"to-page",
     "data" :
     {
-      "url": "https://www.instagram.com/louisezin/"
+      "page": 80
     }
-  }*/
+  }
 ]

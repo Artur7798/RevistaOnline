@@ -1,13 +1,23 @@
-[/*
+[{
+  "x":365,
+  "y":550,
+  "width":65,
+  "height":10,
+  "class":"to-page",
+  "data":
   {
-    "x":345,
+    "page": 78
+  }
+},
+  {
+    "x":20,
     "y":550,
-    "width":100,
-    "height":14,
-    "class":"link",
-    "data" :
+    "width":65,
+    "height":10,
+    "class":"to-page",
+    "data":
     {
-      "url": "https://www.instagram.com/luapinkhasovna/"
+      "page": 77
     }
-  }*/
+  }
 ]

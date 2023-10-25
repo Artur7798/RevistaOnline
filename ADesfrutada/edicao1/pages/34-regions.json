@@ -1,34 +1,23 @@
 [{
-    "x":50,
-    "y":305,
-    "width":80,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.instagram.com/coletivo.margem/"
-    }
-  },
+  "x":365,
+  "y":550,
+  "width":65,
+  "height":10,
+  "class":"to-page",
+  "data":
   {
-    "x":80,
-    "y":485,
-    "width":80,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://invernocultural.ufsj.edu.br/"
-    }
-  },
+    "page": 74
+  }
+},
   {
-    "x":375,
-    "y":295,
-    "width":28,
-    "height":14,
-    "class":"link",
-    "data" :
+    "x":20,
+    "y":550,
+    "width":65,
+    "height":10,
+    "class":"to-page",
+    "data":
     {
-      "url": "https://www.instagram.com/felit_/"
+      "page": 76
     }
   }
 ]
