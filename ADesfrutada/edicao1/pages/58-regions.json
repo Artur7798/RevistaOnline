@@ -1,0 +1,23 @@
+[{
+    "x":140,
+    "y":420,
+    "width":75,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/annacaribee/"
+    }
+  },
+  {
+    "x":140,
+    "y":515,
+    "width":60,
+    "height":14,
+    "class":"link",
+    "data" :
+    {
+      "url": "https://www.instagram.com/louisezin/"
+    }
+  }
+]
