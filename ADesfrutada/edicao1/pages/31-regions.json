@@ -1,34 +1,12 @@
 [{
-    "x":130,
-    "y":309,
-    "width":40,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://www.youtube.com/watch?v=ad_R0FPw2Ak&t=97s"
-    }
-  },
+  "x":385,
+  "y":550,
+  "width":60,
+  "height":10,
+  "class":"to-page",
+  "data":
   {
-    "x":328,
-    "y":360,
-    "width":50,
-    "height":14,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfZ-5KUGl0W1-3wvorAOqXzqmF4ZwAkyuppoqynDcH-53G2zA/viewform"
-    }
-  },
-  {
-    "x":260,
-    "y":465,
-    "width":45,
-    "height":30,
-    "class":"link",
-    "data" :
-    {
-      "url": "https://open.spotify.com/album/4U1gnAsa5rmW9MezO5DPfr"
-    }
+    "page": 78
   }
+}
 ]

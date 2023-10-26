@@ -1,12 +1,12 @@
 [{
-  "x":375,
+  "x":20,
   "y":550,
-  "width":60,
-  "height":14,
+  "width":80,
+  "height":10,
   "class":"to-page",
-  "data" :
+  "data":
   {
-    "page": 76
+    "page": 78
   }
 }
 ]
