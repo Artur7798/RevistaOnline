@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <![endif]-->
+  <script src="https://www.paypal.com/sdk/js?client-id=AUzL31IT4JaIMvsL-KjEzKD6qaNJxPhHAdvAFHv1dUQE4H1Lvsaj7JxooOsLAlgt5ZnLYp6zl-1qnuZY"></script>
 </head>
 <body>
 <font face="Anton">
@@ -74,7 +75,7 @@
       <div class="col-md-7" style="margin-top: 120px;">
         <img class="featurette-image img-responsive center-block" style="width: 400px;" src="img/em breve.png"  alt="Em breve">
 
-        <!---<p><a class="btn btn-default" href="#" role="button">Acessar agora &raquo;</a></p>!--->
+        <!---<p><a class="btn btn-default" href="ADesfrutada/edicao1/edicao1.html" style="font-size: 30px;" role="button">Acessar agora &raquo;</a></p>!--->
       </div>
       <div class="container mt-3">
         <button type="button" class="btn btn-primary" style="width: 236px;" data-bs-toggle="modal" data-bs-target="#myModal">
@@ -101,10 +102,47 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
-
           </div>
         </div>
       </div>
+
+      <div id="paypal-button-container" style="max-width:280px;"></div>
+
+      <script src="https://www.paypal.com/sdk/js?client-id=AUzL31IT4JaIMvsL-KjEzKD6qaNJxPhHAdvAFHv1dUQE4H1Lvsaj7JxooOsLAlgt5ZnLYp6zl-1qnuZY&components=buttons"></script>
+
+      <script>
+        paypal.Buttons({
+          style: {
+            layout: 'vertical',
+            color:  'blue',
+            shape:  'rect',
+            label:  'paypal'
+          },
+          createOrder: function(data, actions) {
+            // Lógica para criar a ordem de pagamento
+            return actions.order.create({
+              purchase_units: [{
+                amount: {
+                  value: '1.00' // Defina o valor do pagamento
+                }
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            // Lógica após a aprovação do pagamento
+            alert('Pagamento aprovado!');
+            // Redirecionar para a página de sucesso após a compra
+            window.location.href = 'https://adesfrutada.com/ADesfrutada/edicao1/edicao1.html';
+          },
+          onCancel: function (data) {
+            // Lógica em caso de cancelamento
+            alert('Pagamento cancelado.');
+            // Redirecionar para a página de cancelamento após o cancelamento
+            window.location.href = 'https://adesfrutada.com/ADesfrutada/edicao0/edicao0.html';
+          }
+        }).render('#paypal-button-container');
+      </script>
+
 
 
       <hr class="featurette-divider">
