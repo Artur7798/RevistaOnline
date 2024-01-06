@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <![endif]-->
-  <script src="https://www.paypal.com/sdk/js?client-id=AUzL31IT4JaIMvsL-KjEzKD6qaNJxPhHAdvAFHv1dUQE4H1Lvsaj7JxooOsLAlgt5ZnLYp6zl-1qnuZY"></script>
 </head>
 <body>
 <font face="Anton">
@@ -61,6 +60,29 @@
     </div>
   </div>
 </div>
+        <div class="col-md-10 col-sm-5">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"><img src="../RevistaOnline/img/Adesfrutadan1_capa.png"  style="width: 401px;margin-left: 70px;" class="d-block" alt="Edição n 1"></a>
+            </div>
+            <div class="carousel-item">
+             <a href="../RevistaOnline/ADesfrutada/edicao0/edicao0.html"><img src="../RevistaOnline/ADesfrutada/edicao0/pages/1.png" style="width: 401px;margin-left: 70px;"  class="d-block" alt="Edição n 0"></a>
+            </div>
+            <div class="carousel-item">
+              <img src="../RevistaOnline/img/em%20breve.png"  class="d-block w-100" alt="Mande sua Obra">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color: black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="background-color: black" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
 
   <div class="container marketing">
 
@@ -70,7 +92,7 @@
 
     <div class="row featurette">
       <div class="col-md-5">
-        <a href="#"><img class="featurette-image img-responsive center-block" style="width: 400px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
+        <a href="../RevistaOnline/edicao1.html"><img class="featurette-image img-responsive center-block" style="width: 400px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
       </div>
       <div class="col-md-7" style="margin-top: 120px;">
         <img class="featurette-image img-responsive center-block" style="width: 400px;" src="img/em breve.png"  alt="Em breve">
@@ -106,44 +128,6 @@
         </div>
       </div>
 
-      <div id="paypal-button-container" style="max-width:280px;"></div>
-
-      <script src="https://www.paypal.com/sdk/js?client-id=AUzL31IT4JaIMvsL-KjEzKD6qaNJxPhHAdvAFHv1dUQE4H1Lvsaj7JxooOsLAlgt5ZnLYp6zl-1qnuZY&components=buttons"></script>
-
-      <script>
-        paypal.Buttons({
-          style: {
-            layout: 'vertical',
-            color:  'blue',
-            shape:  'rect',
-            label:  'paypal'
-          },
-          createOrder: function(data, actions) {
-            // Lógica para criar a ordem de pagamento
-            return actions.order.create({
-              purchase_units: [{
-                amount: {
-                  value: '1.00' // Defina o valor do pagamento
-                }
-              }]
-            });
-          },
-          onApprove: function(data, actions) {
-            // Lógica após a aprovação do pagamento
-            alert('Pagamento aprovado!');
-            // Redirecionar para a página de sucesso após a compra
-            window.location.href = 'https://adesfrutada.com/ADesfrutada/edicao1/edicao1.html';
-          },
-          onCancel: function (data) {
-            // Lógica em caso de cancelamento
-            alert('Pagamento cancelado.');
-            // Redirecionar para a página de cancelamento após o cancelamento
-            window.location.href = 'https://adesfrutada.com/ADesfrutada/edicao0/edicao0.html';
-          }
-        }).render('#paypal-button-container');
-      </script>
-
-
 
       <hr class="featurette-divider">
 
@@ -176,40 +160,13 @@
 
     <!-- /END THE FEATURETTES -->
 
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-      <div class="text-center" style="font-size: 30px;">Nosso Time:</div>
-  </div>
-  <div class="row" style="padding-top: 100px">
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Ju.png" alt="Juliana imagem" width="140" height="140">
-      <h2>Ju Lopse</h2>
-      <p>Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p>
-      <p>Contato: julopseautora@gmail.com</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Artur.jpeg" alt="Artur imagem" width="140" height="140">
-      <h2>Artur Grochocki</h2>
-      <p>Desenvolvedor Front-End há mais de dois anos, um dos responsáveis pela criação do site que hospeda e apresenta a Revista Virtual "<strong>A desFrutada</strong>". Formado em Administração pela UFPR em 2021 e finalizando (2023) a segunda graduação em Análise De Dados na Estácio. Com projetos desenvolvidos nesses dois anos, ajudei clientes a criar Sites, landing pages e Hotsites.</p>
-      <p>Contato: digitalbrother0714@gmail.com</p>
-    </div>
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Mandi.jpeg" alt="Mandi imagem" width="140" height="140">
-      <h2>Mandi Moreira</h2>
-      <p>Mandi Moreira, natural de Porto Alegre/RS. É artista visual, arquiteta e escritora, não necessariamente nesta ordem. Na revista A desfrutada é uma das idealizadoras, além de diretora de arte e responsável pelas redes sociais.
-        Desde pequena se interessa pela Literatura, em especial pela Poesia. E, para além da escrita, trabalha com pintura, fotografia e ilustrações, como busca de autoconhecimento, memória afetiva e resgate da ancestralidade. </p>
-      <p>IG: @mandhi.e</p>
-    </div>
-  </div>
-
-
-
-
-
   <!-- FOOTER -->
   <footer>
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg><a style="text-decoration: none" href="#">Back to top<i class="fa-solid fa-arrow-up"></i></a>
-
+    <div class="row" id="livros">
+      <a href="../RevistaOnline/ADesfrutada/edicao0">Edição 0</a>
+      <a href="../RevistaOnline/ADesfrutada/edicao1">Edição 1</a>
+    </div>
 
   </footer>
 
