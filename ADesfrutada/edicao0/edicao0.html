@@ -36,7 +36,7 @@
 	</nav>
 </header>
 
-<h1 class="text-center" style="padding-top: 60px;color: white">Revista <strong>A desFrutada</strong>! Edicao 0!</h1>
+<!---h1 class="text-center" style="padding-top: 40px;color: white">Revista <strong>A desFrutada</strong>! Edicao 0!</h1!--->
 	<!-- Barra de navegação -->
 
 <div id="canvas">
@@ -45,11 +45,13 @@
 
 <div class="magazine-viewport">
 	<div class="container">
-		<div class="magazine">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="magazine">
 			<!-- Next button -->
 			<div ignore="1" class="next-button"></div>
 			<!-- Previous button -->
 			<div ignore="1" class="previous-button"></div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -207,11 +209,11 @@ function loadApp() {
 	$('.magazine-viewport').zoom({
 		flipbook: $('.magazine'),
 
-		max: function() { 
-			
-			return largeMagazineWidth()/$('.magazine').width();
+		max: function() {
 
-		}, 
+			return 1200/$('.magazine').width();
+
+		},
 
 		when: {
 
@@ -222,7 +224,7 @@ function loadApp() {
 			},
 
 			swipeRight: function() {
-				
+
 				$(this).zoom('flipbook').turn('previous');
 
 			},
@@ -242,7 +244,7 @@ function loadApp() {
 				$('.made').hide();
 				$('.magazine').removeClass('animated').addClass('zoom-in');
 				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
-				
+
 				if (!window.escTip && !$.isTouch) {
 					escTip = true;
 

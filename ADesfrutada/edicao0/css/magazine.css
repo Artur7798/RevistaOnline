@@ -373,6 +373,12 @@ body{
 	background-position:-66px 0;
 	cursor: pointer;
 }
+.zoom-icon-medium {
+	background-position:0 0;
+	cursor: pointer;
+	margin-right: 95px;
+}
+
 
 .bottom{
 	position:absolute;
