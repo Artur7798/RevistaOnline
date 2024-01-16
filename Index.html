@@ -30,6 +30,52 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <![endif]-->
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      background-size: 100%, 100%;
+      background-image: none;
+    }
+
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      color: red;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: red;
+    }
+
+    /* Estilo adicional para centralizar o carrossel */
+    .carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajuste conforme necessário para a altura desejada */
+    }
+
+    /* Estilo para ajustar o tamanho das imagens e centralizá-las */
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-item img {
+      max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+      width: auto; /* Garante que a largura se ajuste automaticamente */
+      margin: 0 auto; /* Centraliza horizontalmente */
+    }
+  </style>
 </head>
 <body>
 <font face="Anton">
@@ -68,87 +114,46 @@
     </div>
   </div>
 
-  <!--START LATEST ARRIVALS-->
-  <div class="lastest_arrivals">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">
-          <h1>Edições</h1>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-10">
-          <div class="lastest_featured_products owl-carousel owl-theme">
-            <div class="row">
-            <div class="lastest_arrival_items item col-md-4">
-              <div class="card">
-                <span class="product-type">NEW</span>
-                <div class="image-holder">
-                  <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"  data-fancybox="lastest_product"  data-title="Shirt Name">
-                    <img src="../RevistaOnline/img/Adesfrutadan1_capa.png" class="card-img-top" alt="Lastest Arrivals 1">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 text-center">
-                      <h5 class="card-title">Edição N 1</h5>
-                    </div>
-                    <div class="col-12 text-center">
-                      <p class="card-text"> Grátis</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lastest_arrival_items item col-md-4">
-              <div class="card">  <span class="product-type">NEW</span>
-                <div class="image-holder">
-                  <a href="../RevistaOnline/ADesfrutada/edicao0/edicao0.html"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                    <img src="../RevistaOnline/ADesfrutada/edicao0/pages/1.png" class="card-img-top" alt="Lastest Arrivals 1">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 text-center">
-                      <h5 class="card-title">Edição N 0</h5>
-                    </div>
-                    <div class="col-12 text-center">
-                      <p class="card-text text-center"> Grátis</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lastest_arrival_items item col-md-4">
-              <div class="card">
-                <span class="product-type">NEW</span>
-                <div class="image-holder">
-                  <a href="#"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                    <img src="../RevistaOnline/img/em%20breve.png" class="card-img-top" alt="Lastest Arrivals 1">
-                  </a>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 text-center">
-                      <h5 class="card-title">Em Breve </h5>
-                    </div>
-                    <div class="col-12 text-center">
-                      <p class="card-text text-center"> </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            </div>
-
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"  data-fancybox="lastest_product"  data-title="Shirt Name">
+              <img src="../RevistaOnline/img/Adesfrutadan1_capa.png" class="card-img-top" alt="Lastest Arrivals 1">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="../RevistaOnline/ADesfrutada/edicao0/edicao0.html"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+              <img src="../RevistaOnline/ADesfrutada/edicao0/pages/1.png" class="card-img-top" alt="Lastest Arrivals 1">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+              <img src="../RevistaOnline/img/em%20breve.png" class="card-img-top" alt="Lastest Arrivals 1">
+            </a>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
-  <!--END LATEST ARRIVALS-->
+  </div>
+
 
   <div class="container marketing">
 
