@@ -31,8 +31,11 @@
 
   <![endif]-->
   <style>
+    body{
+      font-family: anton;
+    }
     footer {
-      background-color: #6B0C22; /* Red wine color */
+      background-color: #87000D; /* Red wine color */
       padding: 30px 0;
     }
 
@@ -58,15 +61,19 @@
       color: #fff;
       margin-bottom: 20px;
     }
+    #apresentacao p{
+      color: black;
+      margin-bottom: 20px;
+    }
 
     a {
-      color: #FFD700; /* Gold color */
+      color:#F9B233;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #FF4500; /* Dark orange color */
+      color: #E87600; /* Dark orange color */
     }
 
     ul {
@@ -95,13 +102,19 @@
     .carousel-control-next-icon:after {
       content: '>';
       font-size: 55px;
-      color: red;
+      position: absolute;
+      top: 238px;
+      right: -15px;
+      color: #87000D;
     }
 
     .carousel-control-prev-icon:after {
       content: '<';
       font-size: 55px;
-      color: red;
+      position: absolute;
+      left: -12px;
+      top: 238px;
+      color: #87000D;
     }
 
     /* Estilo adicional para centralizar o carrossel */
@@ -125,14 +138,17 @@
 
     .carousel-item img {
       max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
-      width: auto; /* Garante que a largura se ajuste automaticamente */
+      width: 860px; /* Garante que a largura se ajuste automaticamente */
       margin: 0 auto; /* Centraliza horizontalmente */
     }
+    .carousel-indicators {
+      background-color:#F9B233;
+    }
+
   </style>
 </head>
 <body>
-<font face="Anton">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-top: 55px;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="font-size: 25px;">
       <a class="navbar-brand" href="#"><img class="img-circle" src="img/LOGO.png" alt="A desFrutada" width="120" height="80"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,8 +160,6 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item"><a class="nav-link active" href="./Revista_Online.html">Revista Online</a></li>
-          <li class="nav-item"><a class="nav-link active" href="./Forms.html">Envie Sua Obra</a></li>
-          <li class="nav-item"><a class="nav-link active" target="_blank" href="https://www.instagram.com/adesfrutada/"><svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
         </ul>
       </div>
     </div>
@@ -157,7 +171,7 @@
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <img class="featurette-image img-responsive center-block" style="width: 300px;" src="img/foto perfil desfrutada.png"  alt="foto perfil desfrutada">
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8" id="apresentacao">
           <p><strong style="font-size: 27px;">Uma revista de literatura e arte com muita diversidade!</strong></p>
           <p class="lead" align="justify" style="font-family: anton">
             <strong>A desFrutada</strong> é uma revista virtual que se propõe a publicar textos e obras visuais de diferentes autorias, com teor pró direitos humanos e diversidade. Como o nome já indica, tem a intenção de elencar quem foi chamada, em algum momento de "desfrutada", em especial, mulheres cis e trans, pessoas LGBTQIAP+, pessoas negras, pessoas com deficiência e todas que se identifiquem com o termo e que pretendam frutificar.
@@ -177,20 +191,20 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="padding-top: 100px;">
           <div class="carousel-item active">
-            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"  data-fancybox="lastest_product"  data-title="Shirt Name">
-              <img src="../RevistaOnline/img/Adesfrutadan1_capa.png" class="card-img-top" alt="Lastest Arrivals 1">
+            <a href="#homeedicao1"  data-fancybox="lastest_product"  data-title="Shirt Name">
+              <img src="../RevistaOnline/img/banner01_Home.jpg" class="card-img-top" alt="Revista A desfrutada">
             </a>
           </div>
           <div class="carousel-item">
-            <a href="../RevistaOnline/ADesfrutada/edicao0/edicao0.html"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-              <img src="../RevistaOnline/ADesfrutada/edicao0/pages/1.png" class="card-img-top" alt="Lastest Arrivals 1">
+            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+            <img src="../RevistaOnline/img/banner02_Nova%20edição.jpg" class="card-img-top" alt="Edição 1">
             </a>
           </div>
           <div class="carousel-item">
-            <a href="#"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-              <img src="../RevistaOnline/img/em%20breve.png" class="card-img-top" alt="Lastest Arrivals 1">
+            <a href="./Forms.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+              <img src="../RevistaOnline/img/banner03_Envie%20sua%20obra%20copiar.jpg" class="card-img-top" alt="Envie sua Obra">
             </a>
           </div>
         </div>
@@ -216,14 +230,14 @@
 
     <div class="row featurette">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8">
-        <a href="ADesfrutada/edicao1/edicao1.html"><img class="featurette-image img-responsive center-block" style="width: 380px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
+        <a href="ADesfrutada/edicao1/edicao1.html"><img class="featurette-image img-responsive center-block" id="homeedicao1" style="width: 380px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
 
         <p><a class="btn btn-default" href="ADesfrutada/edicao1/edicao1.html" style="font-size: 30px;" role="button">Acessar agora &raquo;</a></p>
       </div>
       <div class="container mt-3">
-        <button type="button" class="btn btn-primary" style="width: 236px;" data-bs-toggle="modal" data-bs-target="#myModal">
+        <button type="button" class="btn" style="width: 236px; background-color: #AA4817" data-bs-toggle="modal" data-bs-target="#myModal">
           Apoie <strong>A desFrutada</strong>
         </button>
       </div>
@@ -274,7 +288,7 @@
           <a href="ADesfrutada/edicao0/edicao0.html"><img class="featurette-image img-responsive center-block" style="width: 380px;" src="../ADesfrutada/edicao0/pages/1.png"  alt="Imagem 1 edição da revista"></a>
         </div>
         <div class="container mt-3 col-md-10">
-          <button type="button" class="btn btn-primary float-end" style="width: 236px;" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn  float-end" style="width: 236px; background-color: #AA4817;margin-right: 170px" data-bs-toggle="modal" data-bs-target="#myModal">
             Apoie <strong>A desFrutada</strong>
           </button>
         </div>
@@ -290,7 +304,7 @@
           <div class="row footer-container">
             <div class="col-xs-12 col-sm-6 col-md-4 f-sec1 footer-section">
               <h4 class="high-lighted-heading">Sobre Nós</h4>
-              <p>Revista Digital focada no público x, y e z</p>
+              <p>Uma Revista De Literatura E Arte Com Muita Diversidade</p>
               <a href="../RevistaOnline/sobre.html">Saiba Mais</a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 f-sec2 footer-section">
@@ -320,6 +334,5 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../RevistaOnline/owl.carousel.min.js"></script>
 
-</font>
 </body>
 </html>
