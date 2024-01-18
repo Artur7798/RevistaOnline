@@ -21,9 +21,70 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <![endif]-->
-  <script src="https://www.paypal.com/sdk/js?client-id=AUzL31IT4JaIMvsL-KjEzKD6qaNJxPhHAdvAFHv1dUQE4H1Lvsaj7JxooOsLAlgt5ZnLYp6zl-1qnuZY"></script>
+  <style>
+    body {
+      background: linear-gradient(45deg, #FF4500, #FF6347, #FF4500);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .team-heading {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .team-description {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-team {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      flex: 0 0 30%;
+      margin: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .img-circle {
+      border-radius: 50%;
+    }
+
+    .team-name {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .item {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+
 </head>
 <body>
+
 <font face="Anton">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="font-size: 25px;">
@@ -44,38 +105,47 @@
     </div>
   </nav>
 
-  <div class="row col-md-10 col-sm-6 text-center">
-    <p>Sobre nós</p>
-    <p class="text-center">
-      Somos uma plataforma voltada para a divulgação de trabalhos autorais de pessoas que querem impacatr publico x,y e z
-    </p>
-  </div>
+  <section class="team-section ui-block-04">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 stats-heading-area text-center wow fadeInUp">
+          <p class="heading team-heading">Sobre nós</p>
+          <p class="text-center team-description">
+            Bem-vindo ao nosso espaço dedicado à expressão feminina! Somos uma plataforma comprometida em fornecer um espaço seguro e significativo para poesias, artes e textos que abordam questões essenciais para o público feminino. Junte-se a nós na jornada de explorar e celebrar a diversidade de vozes e perspectivas.
+          </p>
+        </div>
+        <div class="row col-lg-12 col-md-6">
+          <div class="text-center" style="font-size: 30px;">Nosso Time:</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row col-md-12 col-sm-6">
+          <div class="testimonial-team owl-carousel owl-theme">
+            <div class="item text-center">
+              <img class="img-circle" src="img/Ju.png" alt="Juliana imagem" width="140" height="140">
+              <h2 class="team-name">Ju Lopse</h2>
+              <p>Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p>
+              <p>Contato: julopseautora@gmail.com</p>
+            </div>
+            <div class="item text-center">
+              <img class="img-circle" src="img/Artur.jpeg" alt="Artur imagem" width="140" height="140">
+              <h2 class="team-name">Artur Grochocki</h2>
+              <p>Desenvolvedor Front-End há mais de dois anos, um dos responsáveis pela criação do site que hospeda e apresenta a Revista Virtual "<strong>A desFrutada</strong>". Formado em Administração pela UFPR em 2021 e finalizando (2023) a segunda graduação em Análise De Dados na Estácio. Com projetos desenvolvidos nesses dois anos, ajudei clientes a criar Sites, landing pages e Hotsites.</p>
+              <p>Contato: digitalbrother0714@gmail.com</p>
+            </div>
+            <div class="item text-center">
+              <img class="img-circle" src="img/Mandi.jpeg" alt="Mandi imagem" width="140" height="140">
+              <h2 class="team-name">Mandi Moreira</h2>
+              <p>Mandi Moreira, natural de Porto Alegre/RS. É artista visual, arquiteta e escritora, não necessariamente nesta ordem. Na revista A desfrutada é uma das idealizadoras, além de diretora de arte e responsável pelas redes sociais.
+                Desde pequena se interessa pela Literatura, em especial pela Poesia. E, para além da escrita, trabalha com pintura, fotografia e ilustrações, como busca de autoconhecimento, memória afetiva e resgate da ancestralidade. </p>
+              <p>IG: @mandhi.e</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Three columns of text below the carousel -->
-  <div class="row col-md-10 col-sm-6">
-      <div class="text-center" style="font-size: 30px;">Nosso Time:</div>
-  </div>
-  <div class="row col-md-10 col-sm-6" style="padding-top: 100px;padding-left: 310px;">
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Ju.png" alt="Juliana imagem" width="140" height="140">
-      <h2>Ju Lopse</h2>
-      <p>Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p>
-      <p>Contato: julopseautora@gmail.com</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Artur.jpeg" alt="Artur imagem" width="140" height="140">
-      <h2>Artur Grochocki</h2>
-      <p>Desenvolvedor Front-End há mais de dois anos, um dos responsáveis pela criação do site que hospeda e apresenta a Revista Virtual "<strong>A desFrutada</strong>". Formado em Administração pela UFPR em 2021 e finalizando (2023) a segunda graduação em Análise De Dados na Estácio. Com projetos desenvolvidos nesses dois anos, ajudei clientes a criar Sites, landing pages e Hotsites.</p>
-      <p>Contato: digitalbrother0714@gmail.com</p>
-    </div>
-    <div class="col-lg-4">
-      <img class="img-circle" src="img/Mandi.jpeg" alt="Mandi imagem" width="140" height="140">
-      <h2>Mandi Moreira</h2>
-      <p>Mandi Moreira, natural de Porto Alegre/RS. É artista visual, arquiteta e escritora, não necessariamente nesta ordem. Na revista A desfrutada é uma das idealizadoras, além de diretora de arte e responsável pelas redes sociais.
-        Desde pequena se interessa pela Literatura, em especial pela Poesia. E, para além da escrita, trabalha com pintura, fotografia e ilustrações, como busca de autoconhecimento, memória afetiva e resgate da ancestralidade. </p>
-      <p>IG: @mandhi.e</p>
-    </div>
-  </div>
 
   <!-- FOOTER -->
   <footer>
