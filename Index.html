@@ -138,10 +138,22 @@
 
     .carousel-item img {
       max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
-      width: 860px; /* Garante que a largura se ajuste automaticamente */
+      margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .carousel-item img {
+      max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
       margin: 0 auto; /* Centraliza horizontalmente */
     }
     .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 200px;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 15%;
       background-color:#F9B233;
     }
 
@@ -150,7 +162,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="font-size: 25px;">
-      <a class="navbar-brand" href="#"><img class="img-circle" src="img/LOGO.png" alt="A desFrutada" width="120" height="80"></a>
+      <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/LOGO.png" alt="A desFrutada" width="120" height="80"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -184,7 +196,7 @@
 
   <div class="container">
   <div class="row">
-    <div class="col-12 col-md-8 offset-md-2">
+    <div class="col-12 col-md-8 offset-md-2" style="height: 400px;">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -198,7 +210,7 @@
             </a>
           </div>
           <div class="carousel-item">
-            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"   >
             <img src="../RevistaOnline/img/banner02_Nova%20edição.jpg" class="card-img-top" alt="Edição 1">
             </a>
           </div>
