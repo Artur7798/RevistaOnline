@@ -120,7 +120,7 @@ body{
 }
 
 .magazine-viewport .loader{
-	background-image:url(../pics/loader.gif);
+	background-image:url(../pics/LOGO.gif);
 	width:22px;
 	height:22px;
 	position:absolute;
@@ -347,12 +347,12 @@ body{
 .zoom-icon{
 	position:absolute;
 	z-index:1000;
-	width:22px;
-	height:22px;
-	top:10px;
-	right:10px;
-	background-image:url(../pics/zoom-icons.png);
-	background-size:88px 22px;
+	width: 54px;
+	height: 51px;
+	top: 120px;
+	right: 212px;
+	background-image:url(../pics/zoom.png);
+	background-size:110px 51px;
 }
 
 .zoom-icon-in{
@@ -361,16 +361,16 @@ body{
 }
 
 .zoom-icon-in.zoom-icon-in-hover{
-	background-position:-22px 0;
+	background-position:110px 0;
 	cursor: pointer;
 }
 
 .zoom-icon-out{
-	background-position:-44px 0;
+	background-position:110px 0;
 }
 
 .zoom-icon-out.zoom-icon-out-hover{
-	background-position:-66px 0;
+	background-position:110px 0;
 	cursor: pointer;
 }
 
