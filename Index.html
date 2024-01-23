@@ -14,90 +14,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Maralheios</title>
-  <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
+  <title>A desFrutada</title>
+  <link rel="icon" href="img/LOGO.png" type="image/x-icon">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/Home.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <![endif]-->
   <style>
-    /*NEW*/
-    /* Reset some default styles */
-    h1,
-    h2,
-    h3,
-    p {
-      margin: 0;
-      padding: 0;
-      color: black;
-    }
-
-    /* Style the album container */
-    .album {
-      background-color: #f8f9fa;
-    }
-
-    /* Center the content in the container */
-    .container {
-      max-width: 1200px;
-      margin: 50px auto;
-    }
-
-    /* Style the card layout */
-    .row-cols-1,
-    .row-cols-sm-2,
-    .row-cols-md-3 {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
-
-    /* Add space between cards */
-    .col {
-      padding: 15px;
-    }
-
-    /* Style the cards */
-    .card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-      word-wrap: break-word;
-      background-color: #fff;
-      background-clip: border-box;
-      border: 1px solid rgba(0, 0, 0, 0.125);
-      border-radius: 0.25rem;
-    }
-
-    /* Style the card body */
-    .card-body {
-      flex: 1 1 auto;
-      padding: 1.25rem;
-    }
-
-    /* Style the card text */
-    .card-text {
-      margin-bottom: 1rem;
-    }
-
-    /* Style the buttons */
-    .btn-group {
-      margin-right: 5px;
-    }
-
-    /* Style the timestamp */
-    .text-muted {
-      font-size: 0.85em;
-      color: #96811D; /* Timestamp color */
-    }
-
-    /* Add shadow to cards on hover */
-    .card:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease-in-out;
-    }
     body{
       font-family: anton;
     }
@@ -122,6 +55,11 @@
       font-size: 24px;
       margin-bottom: 15px;
       color: #fff;
+    }
+
+    p {
+      color: #fff;
+      margin-bottom: 20px;
     }
     #apresentacao p{
       color: black;
@@ -205,7 +143,7 @@
     .carousel-indicators {
       position: absolute;
       right: 0;
-      bottom: -40px;
+      bottom: 0;
       left: 0;
       z-index: 2;
       display: flex;
@@ -217,7 +155,7 @@
     /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
     @media (max-width: 767px) {
       .carousel-indicators {
-        bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+        bottom: 200px; /* Ajuste o valor conforme necessário para dispositivos móveis */
       }
     }
     @media (max-width: 767px) {
@@ -225,12 +163,20 @@
         height: 300px;
       }
     }
+    @media (max-width: 267px) {
+      #homeedicao1 img ,
+      #homeedicao2 img  {
+        width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid" style="font-size: 25px;">
-    <a class="navbar-brand" href="#"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="120" height="80"></a>
+    <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/LOGO.png" alt="A desFrutada" width="120" height="80"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -239,155 +185,154 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
+        <li class="nav-item"><a class="nav-link active" href="./Revista_Online.html">Revista Online</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container">
-  <div class="starter-template">
-    <div class="row">
-      <div class="col-md-4 col-lg-4">
-        <img class="featurette-image img-responsive center-block" style="width: 300px;" src="img/03- ÍCONE DE PERFIL.png"  alt="foto perfil desfrutada">
-      </div>
-      <div class="col-md-4 col-lg-8">
-        <p><strong style="font-size: 27px;">Uma Editora</strong></p>
-        <p class="lead" align="justify">
-          <strong>A Maralheios</strong> é uma editora
-        </p>
-      </div>
+  <!---blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CzE9e4xO4BB/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:240px; min-width:226px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CzE9e4xO4BB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicação no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CzE9e4xO4BB/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação partilhada por Revista A desFrutada (@adesfrutada)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>    <div class="starter-template"!--->
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <img class="featurette-image img-responsive center-block" style="width: 300px;" src="img/foto perfil desfrutada.png"  alt="foto perfil desfrutada">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8" id="apresentacao">
+      <p><strong style="font-size: 27px;">Uma revista de literatura e arte com muita diversidade!</strong></p>
+      <p class="lead" align="justify" style="font-family: anton">
+        <strong>A desFrutada</strong> é uma revista virtual que se propõe a publicar textos e obras visuais de diferentes autorias, com teor pró direitos humanos e diversidade. Como o nome já indica, tem a intenção de elencar quem foi chamada, em algum momento de "desfrutada", em especial, mulheres cis e trans, pessoas LGBTQIAP+, pessoas negras, pessoas com deficiência e todas que se identifiquem com o termo e que pretendam frutificar.
+      </p>
     </div>
   </div>
 </div>
+</div>
+
 
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-8 offset-md-2" id="container-car">
+    <div class="col-12 col-md-8 offset-md-2" style="height: 400px;">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner" style="padding-top: 100px;">
           <div class="carousel-item active">
             <a href="#homeedicao1"  data-fancybox="lastest_product"  data-title="Shirt Name">
-              <img src="img/banner01_maralheios.jpg" class="card-img-top" alt="Maralheios">
+              <img src="../RevistaOnline/img/banner01_Home.jpg" class="card-img-top" alt="Revista A desfrutada">
             </a>
           </div>
           <div class="carousel-item">
-            <a href="#"   >
-              <img src="img/banner02_maralheios.jpg" class="card-img-top" alt="Poliamar">
+            <a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html"   >
+              <img src="../RevistaOnline/img/banner02_Nova%20edição.jpg" class="card-img-top" alt="Edição 1">
             </a>
           </div>
           <div class="carousel-item">
-            <a href="#" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-              <img src="img/banner03_maralheios.jpg" class="card-img-top" alt="À Remetente - Amazon">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://adesfrutada.com/" target=_blank  >
-              <img src="img/banner04_maralheios.jpg" class="card-img-top" alt="Revista A Desfrutada">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-              <img src="img/banner05_maralheios.jpg" class="card-img-top" alt="Publique Seu Livro">
+            <a href="./Forms.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+              <img src="../RevistaOnline/img/banner03_Envie%20sua%20obra%20copiar.jpg" class="card-img-top" alt="Envie sua Obra">
             </a>
           </div>
         </div>
+        <!---button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button!--->
       </div>
     </div>
   </div>
 </div>
 
-<!-- START THE FEATURETTES -->
 
-<hr class="featurette-divider" style="margin=5rem 0">
+<div class="container marketing">
 
-<!-- START PORTOLIO SECTION -->
-<div class="album py-5 bg-light">
-  <div class="container">
+  <!-- START THE FEATURETTES -->
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <!---img src="img/01-CAPA-LIVRO POLIAMAR.jpg"!--->
-          <div class="card-body">
-            <p class="card-text">Livro Poliamar</p>
-            <div class="text-center">
-              Poliamar" fala sobre muitos amores que navegam no mesmo mar. Abordando amores de diversas origens, da amizade ao amor romântico, do amor por homens, amor por mulheres, por uma ou mais pessoas ao mesmo tempo. "Poliamar" é dos poliamores e dos mares, mostra amores nunca dantes navegados e aqueles em que é impossível apenas molhar os pés. "Poliamar" é um convite poético para todos os amores. Dividido em três partes, “Poliamar”, “Criaturas Mundanas” e “Alto Mar”, se desdobram em mares revoltos e em calmarias, ondas que levam e retornam. Enfim, é sobre amar e deixar-se no mar. Em versos que são navegações dessa rota rumo ao poliamar e ao autoamar.
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-              </div>
-              <small class="text-muted">Categoria: Livro</small>
-            </div>
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-12">
+      <a href="ADesfrutada/edicao1/edicao1.html"><img class="featurette-image img-responsive center-block" id="homeedicao1" style="width: 265px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
+      <a class="btn btn-default" href="ADesfrutada/edicao1/edicao1.html" style="font-size: 20px; margin-right: 10px;" role="button">Acessar agora &raquo; Edição 1</a>
+      <a href="ADesfrutada/edicao0/edicao0.html"><img class="featurette-image img-responsive center-block" id="homeedicao2" style="width: 265px;" src="../ADesfrutada/edicao0/pages/1.png"  alt="Imagem 1 edição da revista"></a>
+      <a class="btn btn-default" href="ADesfrutada/edicao0/edicao0.html" style="font-size: 20px;" role="button">Acessar agora &raquo; Edição 0</a>
+    </div>
+
+
+    <div class="container mt-3">
+      <button type="button" class="btn" style="width: 236px; background-color: #AA4817" data-bs-toggle="modal" data-bs-target="#myModal">
+        Apoie <strong>A desFrutada</strong>
+      </button>
+    </div>
+  </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">Ajude <strong>A desFrutada</strong></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <!--img src="img/02- CAPA REVISTA A DESFRUTADA.jpg"!--->
-          <div class="card-body">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-              </div>
-              <small class="text-muted"></small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <!---img src="img/03- CAPA REVISTA A DESFRUTADA EDIÇÃO 01.png-!-->
+          <div class="modal-body">
+            <p>Ajude a revista a ir cada vez mais longe, abaixo está o QR Code para enviar um PIX</p>
+            <p>Para pagar, use o QR Code ou a Chave Aleatória a51823e8-d141-45af-b002-ee43c5323737 no app do seu banco.</p>
 
-          <div class="card-body">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-              </div>
-              <small class="text-muted"></small>
-            </div>
+            <div><img class="h5" src="img/PIX.jpeg" style="max-width: 340px;" alt="PIX"  height="500"></div>
           </div>
-        </div>
-      </div>
 
-      <div class="col">
-        <div class="card shadow-sm">
-          <!---img src="img/04-CAPA E-BOOK0 À REMETENTE.jpg-!-->
-
-          <div class="card-body">
-            <p class="card-text"></p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-              </div>
-              <small class="text-muted">Lidiana Neves</small>
-            </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
+
         </div>
       </div>
     </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- FOOTER -->
+    <footer style="font-size: 18px;">
+      <div class="container">
+        <div class="row footer-container">
+          <div class="col-xs-12 col-sm-6 col-md-4 f-sec1 footer-section">
+            <h4 class="high-lighted-heading">Sobre Nós</h4>
+            <p>Uma Revista De Literatura E Arte Com Muita Diversidade</p>
+            <a href="../RevistaOnline/sobre.html">Saiba Mais</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 f-sec2 footer-section">
+            <h4>Social Network</h4>
+            <ul class="social-icons-simple">
+              <li class="company-about fadeIn">A Desfrutada <a href="https://www.instagram.com/adesfrutada/">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 f-sec3 footer-section">
+            <h4>Nossas Edições</h4>
+            <ul>
+              <li><a href="../RevistaOnline/ADesfrutada/edicao1/edicao1.html">Edição 1</a></li>
+              <li><a href="../RevistaOnline/ADesfrutada/edicao0/edicao0.html">Edição 0</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </div>
-<!-- END PORTOLIO SECTION -->
 
-
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../RevistaOnline/owl.carousel.min.js"></script>
+
 </body>
 </html>

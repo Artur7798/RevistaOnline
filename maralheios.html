@@ -15,13 +15,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Maralheios</title>
-    <link rel="icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
+        /*NEW*/
+        /* Reset some default styles */
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        /* Style the album container */
+        .album {
+            background-color: #f8f9fa;
+        }
+
+        /* Center the content in the container */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        /* Style the card layout */
+        .row-cols-1,
+        .row-cols-sm-2,
+        .row-cols-md-3 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        /* Add space between cards */
+        .col {
+            padding: 15px;
+        }
+
+        /* Style the cards */
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+        }
+
+        /* Style the card body */
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1.25rem;
+        }
+
+        /* Style the card text */
+        .card-text {
+            margin-bottom: 1rem;
+        }
+
+        /* Style the buttons */
+        .btn-group {
+            margin-right: 5px;
+        }
+
+        /* Style the timestamp */
+        .text-muted {
+            font-size: 0.85em;
+            color: #96811D; /* Timestamp color */
+        }
+
+        /* Add shadow to cards on hover */
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
         body{
             font-family: anton;
         }
@@ -46,11 +122,6 @@
             font-size: 24px;
             margin-bottom: 15px;
             color: #fff;
-        }
-
-        p {
-            color: #fff;
-            margin-bottom: 20px;
         }
         #apresentacao p{
             color: black;
@@ -134,19 +205,19 @@
         .carousel-indicators {
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: -40px;
             left: 0;
             z-index: 2;
             display: flex;
             justify-content: center;
             padding: 0;
             margin-right: 15%;
-            background-color:#F9B233;
+            background-color:#96811D;
         }
         /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
         @media (max-width: 767px) {
             .carousel-indicators {
-                bottom: 200px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+                bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
             }
         }
         @media (max-width: 767px) {
@@ -154,90 +225,6 @@
                 height: 300px;
             }
         }
-        /*NEW*/
-        /* Reset some default styles */
-        h1,
-        h2,
-        h3,
-        p {
-            margin: 0;
-            padding: 0;
-            color: black;
-        }
-
-        /* Style the album container */
-        .album {
-            background-color: #f8f9fa;
-        }
-
-        /* Center the content in the container */
-        .container {
-            max-width: 1200px;
-            margin: 50px auto;
-        }
-
-        /* Style the card layout */
-        .row-cols-1,
-        .row-cols-sm-2,
-        .row-cols-md-3 {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -15px;
-        }
-
-        /* Add space between cards */
-        .col {
-            padding: 15px;
-        }
-
-        /* Style the cards */
-        .card {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            border-radius: 0.25rem;
-        }
-
-        /* Style the card image */
-        .card-img-top {
-            width: 633px;
-            height: 269px;
-            object-fit: cover;
-        }
-
-        /* Style the card body */
-        .card-body {
-            flex: 1 1 auto;
-            padding: 1.25rem;
-        }
-
-        /* Style the card text */
-        .card-text {
-            margin-bottom: 1rem;
-        }
-
-        /* Style the buttons */
-        .btn-group {
-            margin-right: 5px;
-        }
-
-        /* Style the timestamp */
-        .text-muted {
-            font-size: 0.85em;
-            color: #96811D; /* Timestamp color */
-        }
-
-        /* Add shadow to cards on hover */
-        .card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
     </style>
 </head>
 <body>
@@ -329,13 +316,16 @@
                 <div class="card shadow-sm">
                     <!---img src="img/01-CAPA-LIVRO POLIAMAR.jpg"!--->
                     <div class="card-body">
-                        <p class="card-text">Poliamar é</p>
+                        <p class="card-text">Livro Poliamar</p>
+                        <div class="text-center m-3">
+                            Poliamar" fala sobre muitos amores que navegam no mesmo mar. Abordando amores de diversas origens, da amizade ao amor romântico, do amor por homens, amor por mulheres, por uma ou mais pessoas ao mesmo tempo...<a href="poliamar.html">Ler Mais</a>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                                <a href="poliamar.html"><button type="button" class="btn btn-sm btn-outline-secondary">Saiba Mais</button></a>
+                                <a href="https://www.amazon.com.br/dp/B09NWCVFVZ" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
                             </div>
-                            <small class="text-muted">Amanda</small>
+                            <small class="text-muted">Categoria: Poesia</small>
                         </div>
                     </div>
                 </div>
