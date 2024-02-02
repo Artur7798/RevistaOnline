@@ -21,6 +21,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
+
     <style>
     /*NEW*/
         /* Reset some default styles */
@@ -40,9 +42,13 @@
 
         /* Center the content in the container */
         .container {
-            max-width: 1200px;
+            max-width: 1700px;
             margin: 50px auto;
         }
+    .container_revista {
+        max-width: 1130px;
+        margin: 50px auto;
+    }
 
         /* Style the card layout */
         .row-cols-1,
@@ -102,7 +108,7 @@
       font-family: anton;
     }
     footer {
-      background-color: #87000D; /* Red wine color */
+      background-color: #96811D; /* Red wine color */
       padding: 30px 0;
     }
 
@@ -161,32 +167,6 @@
       background-image: none;
     }
 
-    .carousel-control-next-icon:after {
-      content: '>';
-      font-size: 55px;
-      position: absolute;
-      top: 238px;
-      right: -15px;
-      color: #87000D;
-    }
-
-    .carousel-control-prev-icon:after {
-      content: '<';
-      font-size: 55px;
-      position: absolute;
-      left: -12px;
-      top: 238px;
-      color: #87000D;
-    }
-
-    /* Estilo adicional para centralizar o carrossel */
-    .carousel-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Ajuste conforme necessário para a altura desejada */
-    }
-
     /* Estilo para ajustar o tamanho das imagens e centralizá-las */
     .carousel-inner {
       display: flex;
@@ -237,17 +217,26 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="font-size: 25px;">
-        <a class="navbar-brand" href="#"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="220" height="130"></a>
-        <!---button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="90" height="80"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="poliamar.html">Poliamar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="A_Rementente.html">A Remetente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
                 </li>
             </ul>
-        </div!-->
+        </div>
     </div>
 </nav>
 
@@ -316,7 +305,7 @@
 
 <!-- START PORTOLIO SECTION -->
 <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container_revista">
         <div class="row">
             <div class="col-md-3 p-3">
                 <div class="card shadow-sm">
@@ -324,7 +313,7 @@
                     <div class="card-body text-center">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ler +</button></a>
+                                <a href="#"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
                                 <a href="https://www.amazon.com.br/dp/B09NWCVFVZ" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
                             </div>
                             <small class="text-muted">Categoria: Poesia</small>
@@ -339,7 +328,7 @@
                     <div class="card-body text-center">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="A_rementente.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler +</button></a>
+                                <a href="A_Rementente.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
                                 <a href="#" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
                             </div>
                             <small class="text-muted">Gênero: Poesia</small>
