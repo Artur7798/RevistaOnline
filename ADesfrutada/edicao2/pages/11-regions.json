@@ -1,13 +1,12 @@
-[
-{
-    "x":380,
-    "y":550,
+[{
+    "x":205,
+    "y":185,
     "width":60,
     "height":10,
-    "class":"to-page",
+    "class":"link",
     "data":
     {
-      "page": 79
+      "url":"https://carpinteirosdouniverso.com.br"
     }
   }
 ]

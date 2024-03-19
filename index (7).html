@@ -1,0 +1,343 @@
+A<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V97X3VB3RH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V97X3VB3RH');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>A desFrutada</title>
+  <link rel="icon" href="img/LOGO.png" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/Home.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <![endif]-->
+  <style>
+    body{
+      font-family: anton;
+    }
+    footer {
+      background-color: #87000D; /* Red wine color */
+      padding: 30px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 0 0 30%;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    #apresentacao p{
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color:#F9B233;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #E87600; /* Dark orange color */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-section {
+        flex: 0 0 100%;
+      }
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      background-size: 100%, 100%;
+      background-image: none;
+    }
+
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      position: absolute;
+      top: 238px;
+      right: -15px;
+      color: #87000D;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      position: absolute;
+      left: -12px;
+      top: 238px;
+      color: #87000D;
+    }
+
+    /* Estilo adicional para centralizar o carrossel */
+    .carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajuste conforme necessário para a altura desejada */
+    }
+
+    /* Estilo para ajustar o tamanho das imagens e centralizá-las */
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-item img {
+      max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+      margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 15%;
+      background-color:#F9B233;
+    }
+    /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: 200px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+  }
+}
+@media (max-width: 767px) {
+#container-car{
+    height: 300px;
+}
+}
+#homeedicao1,
+#homeedicao2 {
+  width: 265px;
+  max-width: 100%;
+}
+
+/* Estilos para telas menores (como em dispositivos móveis) */
+@media (max-width: 767px) {
+  #homeedicao1,
+  #homeedicao2 {
+    width: 165px;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="font-size: 25px;">
+      <a class="navbar-brand" href="#"><img class="img-circle" src="img/LOGO.png" alt="A desFrutada" width="120" height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="../Downloads/Revista_Online.html">Revista Online</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <img class="featurette-image img-responsive center-block" style="width: 300px;" src="img/foto perfil desfrutada.png"  alt="foto perfil desfrutada">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-8" id="apresentacao">
+          <p><strong style="font-size: 27px;">Uma revista de literatura e arte com muita diversidade!</strong></p>
+          <p class="lead" align="justify" style="font-family: anton">
+            <strong>A desFrutada</strong> é uma revista virtual que se propõe a publicar textos e obras visuais de diferentes autorias, com teor pró direitos humanos e diversidade. Como o nome já indica, tem a intenção de elencar quem foi chamada, em algum momento de "desfrutada", em especial, mulheres cis e trans, pessoas LGBTQIAP+, pessoas negras, pessoas com deficiência e todas que se identifiquem com o termo e que pretendam frutificar.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2" id="container-car">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="padding-top: 100px;">
+          <div class="carousel-item active">
+            <a href="#homeedicao1"  data-fancybox="lastest_product"  data-title="Shirt Name">
+              <img src="img/banner01_Home.jpg" class="card-img-top" alt="Revista A desfrutada">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="ADesfrutada/edicao1/edicao1.html"   >
+            <img src="img/banner02_Nova edicao.jpg" class="card-img-top" alt="Edição 1">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="../Downloads/Forms.html" data-fancybox="lastest_product" data-title="Lastest Arrivals 1">
+              <img src="img/banner03_Envie%20sua%20obra%20copiar.jpg" class="card-img-top" alt="Envie sua Obra">
+            </a>
+          </div>
+        </div>
+        <!---button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button!--->
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container marketing">
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-12" >
+      <a href="ADesfrutada/edicao2/edicao2.html"><img class="featurette-image img-responsive center-block" id="homeedicao3" style="width: 265px;" src="img/Adesfrutadan1_capa.png"  alt="Imagem 3 edição da revista"></a>
+      <a class="btn btn-default" href="ADesfrutada/edicao2/edicao2.html" style="font-size: 20px;" role="button">Acessar agora &raquo;</br> Edição 2</a>
+      <a href="ADesfrutada/edicao1/edicao1.html"><img class="featurette-image img-responsive center-block" id="homeedicao1"  src="img/Adesfrutadan1_capa.png"  alt="Imagem 1 edição da revista"></a>
+      <a class="btn btn-default" href="ADesfrutada/edicao1/edicao1.html" style="font-size: 20px;" role="button">Acessar agora &raquo;</br> Edição 1</a>
+      <a href="ADesfrutada/edicao0/edicao0.html"><img class="featurette-image img-responsive center-block" id="homeedicao2"  src="../ADesfrutada/edicao0/pages/1.png"  alt="Imagem edição 0 da revista"></a>
+      <a class="btn btn-default" href="ADesfrutada/edicao0/edicao0.html" style="font-size: 20px;" role="button">Acessar agora &raquo;</br> Edição 0</a>
+    </div>
+
+
+    <div class="container mt-3">
+      <button type="button" class="btn" style="width: 236px; background-color: #AA4817" data-bs-toggle="modal" data-bs-target="#myModal">
+        Apoie <strong>A desFrutada</strong>
+      </button>
+    </div>
+  </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">Ajude <strong>A desFrutada</strong></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Ajude a revista a ir cada vez mais longe, abaixo está o QR Code para enviar um PIX</p>
+            <p>Para pagar, use o QR Code ou a Chave Aleatória a51823e8-d141-45af-b002-ee43c5323737 no app do seu banco.</p>
+
+            <div><img class="h5" src="img/PIX.jpeg" style="max-width: 340px;" alt="PIX"  height="500"></div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer style="font-size: 18px;">
+        <div class="container">
+          <div class="row footer-container">
+            <div class="col-xs-12 col-sm-6 col-md-4 f-sec1 footer-section">
+              <h4 class="high-lighted-heading">Sobre Nós</h4>
+              <p>Uma Revista De Literatura E Arte Com Muita Diversidade</p>
+              <a href="sobre.html">Saiba Mais</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 f-sec2 footer-section">
+              <h4>Social Network</h4>
+              <ul class="social-icons-simple">
+                <li class="company-about fadeIn">A Desfrutada <a href="https://www.instagram.com/adesfrutada/">Instagram</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 f-sec3 footer-section">
+              <h4>Nossas Edições</h4>
+              <ul>
+                <li><a href="ADesfrutada/edicao1/edicao1.html">Edição 1</a></li>
+                <li><a href="ADesfrutada/edicao0/edicao0.html">Edição 0</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../RevistaOnline/owl.carousel.min.js"></script>
+
+</body>
+</html>
